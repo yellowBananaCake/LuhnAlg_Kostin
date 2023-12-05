@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Моё приложение</string>
+    <string name="correсt">Номер карты верен</string>
+    <string name="not_correct">Номер карты неверен</string>
+</resources>
