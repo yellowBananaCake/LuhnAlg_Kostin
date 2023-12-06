@@ -2,11 +2,10 @@ package com.example.myapplication
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
-import java.lang.Math.sqrt
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,7 +32,7 @@ class MainActivity : AppCompatActivity() {
                 var a = num[num.length - i] - '0'
                 if (i % 2 == 0){
                     a *= 2
-                    if (a > 9) a -= 9;
+                    if (a > 9) a -= 9
                 }
                 sum += a
                 i++
@@ -41,37 +40,5 @@ class MainActivity : AppCompatActivity() {
             if (sum % 10 == 0) res.text = getString(R.string.correсt)
             else res.text = getString(R.string.not_correct)
         }
-
-        Log.d("RRR","onCreate()")
-    }
-
-    override fun onStart() {
-        super.onStart()
-        Log.d("RRR","onStart()")
-    }
-
-    override fun onDestroy() {
-        super.onDestroy()
-        Log.d("RRR","onDestroy()")
-    }
-
-    override fun onPause() {
-        super.onPause()
-        Log.d("RRR","onPause()")
-    }
-
-    override fun onRestart() {
-        super.onRestart()
-        Log.d("RRR","onRestart()")
-    }
-
-    override fun onStop() {
-        super.onStop()
-        Log.d("RRR","onStop()")
-    }
-
-    override fun onResume() {
-        super.onResume()
-        Log.d("RRR","onResume()")
     }
 }
